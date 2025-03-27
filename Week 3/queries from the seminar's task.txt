@@ -1,0 +1,50 @@
+--SELECT * FROM Customers
+
+--SELECT age FROM Customers
+--SELECT first_name, age FROM Customers
+--SELECT first_name , last_name FROM Customers 
+--WHERE country ='USA'
+
+--SELECT first_name , last_name FROM Customers 
+--WHERE age > 20
+
+--SELECT first_name , last_name FROM Customers 
+--GROUP BY country
+
+--SELECT first_name , last_name FROM Customers 
+--WHERE age >18
+
+--SELECT age,first_name, last_name, COUNT(customer_id) AS customers
+--FROM Customers 
+--GROUP BY age 
+--HAVING COUNT(customer_id)>1
+
+--SELECT age,first_name, last_name, COUNT(age) AS customers
+--FROM Customers 
+--GROUP BY age 
+--HAVING COUNT(age)>1
+
+--SELECT *
+--FROM Customers, Orders
+--WHERE orders.amount >300 and customers.country='USA'
+
+--SELECT *
+--FROM Customers, Orders
+--WHERE orders.amount >400 and customers.country='USA'
+
+--SELECT * --(unfinished)
+--FROM Customers , Orders
+--WHERE orders.order_id
+
+--SELECT Customers.* --(when my manager wants me to retrieve all the customers who placed an order-version 1)
+--FROM Customers
+--JOIN Orders ON Customers.customer_id = Orders.customer_id;
+
+--SELECT Customers.* --(when my manager wants me to retrieve all the customers who placed an order-version 2)
+--FROM Customers, Orders
+--WHERE Customers.customer_id == Orders.customer_id; --(use double equals, single ones "=" we are using when we have to asign it to a number or something , "==" is when we are asigning logicly)
+
+
+--SELECT Customers.*
+--FROM Customers
+--JOIN Orders ON Customers.customer_id == Orders.customer_id;
